@@ -48,7 +48,7 @@ shinyServer(function(input, output, session) {
     PEs2 <- -gamma1*vals1*vals2
     PEs3 <- -gamma1*vals1*vals3
     
-    plot(pts, PEs1, xlim = c(-5, 5), ylim = c(-gamma1/2, gamma1/2), lwd = 2, col = "darkgoldenrod3", type = "l",
+    plot(pts, PEs1, xlim = c(-5, 5), ylim = c(-abs(gamma1)/2, abs(gamma1)/2), lwd = 2, col = "darkgoldenrod3", type = "l",
          xlab = "w1", ylab = "Own and Cross Partial Effects of w1 (price of item 1)")
     lines(pts, PEs2, #xlim = c(-5, 5), ylim = c(0, 1), lwd = 2, 
           col = "red", type = "l"#,
